@@ -1,0 +1,46 @@
+@media screen and (max-width: 350px){
+    .navbar li a {
+        color: #000 !important;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-family: 'PT Sans', sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }
+  
+}
+/*
+@media screen and (min-width: 768px){
+    body {
+        background: blue;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body {
+        background: orange;
+    }
+
+    p {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        background: white;
+    }
+
+    p {
+        font-size: 100px;
+    }
+}
+
+p {
+    font-size: 20px;
+    color: blue;
+}*/
