@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Flex</title>
+    <style>
+        nav {
+            background-color: tomato;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+        }
+
+        nav a {
+            margin: 10px 50px;
+            /* o professor utilizou display, e as seguintes propriedades
+            
+            height: 50px;
+            min-width: 150px;
+            max-width: 150px; Para não contrair o elemento a no redimensionamento da tela
+            display: flex; 
+            align-items: center;
+            justify-content: center*/
+
+
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+        }
+
+        section div {
+            border: solid 1px tomato;
+            min-width: 200px;
+            max-width: 200px;
+            min-height: 100px;
+            max-height: 100px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cabeçalho do Site</h1>
+        <br>
+        <br>
+    </header>
+    <nav>
+        <a>menu 1</a>
+        <a>menu 2</a>
+        <a>menu 3</a>
+        <a>menu 4</a>
+        <a>menu 5</a>
+        <a>menu 6</a>
+    </nav>
+
+    <section>
+        <div>JAN 1</div>
+        <div>JAN 2</div>
+        <div>JAN 3</div>
+        <div>JAN 4</div>
+        <div>JAN 5</div>
+        <div>JAN 6</div>
+        <div>JAN 7</div>
+        <div>JAN 8</div>
+        <div>JAN 9</div>
+        <div>JAN 10</div>
+    </section>
+
+    <footer>
+        <p>Canal Fessor Bruno</p>
+    </footer>
+
+</body>
+
+</html>
