@@ -15,28 +15,82 @@
 
 <body>
 
-    <header id="content" class="barraMenu">
-        <nav>
-            <div class="divLogo">
+
+    <header id="content" class="barraMenu"> <!-- idContent serve apenas para o hover / barraMenu mantem o menu fixo e aplica a transação de cor-->
+
+        <nav class="nav1">
+      
+            <!--input type="checkbox" id="btnMenu">
+            <label for="btnMenu"></label>-->
+            <div>
+                <a>&#9776;</a>
+            </div>
+
+            <div class="divLogoMobile"> <!-- define o tamanho da logo versao mobile-->
+                <img class="logo" src="img/logo5.svg"> <!-- class logo define que o tamanho da vai ser proporcional ao container-->
+            </div>
+
+        </nav>
+
+        <nav class="nav2">
+
+            <div class="divLogo"> <!-- divLogo define o tamanho da div container da logo-->
                 <img class="logo" src="img/logo6.svg">
             </div>
+
         </nav>
-        <nav id="menu">
+
+        <nav class="nav3">
+
             <a>NOSSOS ÓCULOS</a>
             <a>SOBRE</a>
             <a>ONDE ENCONTRAR</a>
             <a>BLOG</a>
             <a>CONTATO</a>
+
         </nav>
     </header>
 
-   <!-- <section class="sections">
+   <!-- <header id="content" class="barraMenu">
+
+            <nav>
+                <div id="idDivLabel">
+                <input type="checkbox" id="btnMenu">
+                <label for="btnMenu">&#9776;</label>
+                </div>
+    
+                <div style="background-color: tomato" class="divLogoMobile">
+                    <img id="idMenuMobile" class="logo" src="img/logo5.svg">
+                </div>
+    
+            </nav>
+            <nav>
+                
+                <div class="divLogo">
+                    <img class="logo" src="img/logo6.svg">
+                </div>
+    
+            </nav>
+    
+            <nav id="menu">
+    
+                <a>NOSSOS ÓCULOS</a>
+                <a>SOBRE</a>
+                <a>ONDE ENCONTRAR</a>
+                <a>BLOG</a>
+                <a>CONTATO</a>
+    
+            </nav>
+        </header>
+    -->
+
+    <section class="sections">
         <picture>
             <source srcset="img/section/mobileSection1_3.jpg" media="(max-width: 768px)">
             <source srcset="img/section/section1_3.jpg">
             <img srcset="img/section/section1_3.jpg" alt="My default image">
         </picture>
-    </section>-->
+    </section>
 
     <section class="sections">
         <picture>
@@ -45,6 +99,7 @@
             <img srcset="img/section/section1_2.jpg" alt="My default image">
         </picture>
     </section>
+    
     <section class="sections">
         <picture>
             <source srcset="img/section/mobileSection4.jpg" media="(max-width: 768px)">
