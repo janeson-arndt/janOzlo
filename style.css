@@ -18,17 +18,27 @@
 
 /* Estilizando o botão menu mobile - nao deixar espaço entre o label e for */
 
+.menuMobile{
+    display: flex;
+    justify-content: flex-start;
+}
+
+a {
+    cursor: pointer;
+}
 .nav1 a {
-    padding: 5px;
+
     background-color: #222;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    cursor: pointer;
-    width: 120px;
-    height: 50px;
-    display: block; 
+    font-size: 40px;
+    width: inherit;
+    height: inherit;
+   text-align: center;
+   width: 120px;
+    height: inherit;
+    justify-content: flex-end;
+
 }
 
 .nav1 div {
@@ -37,7 +47,7 @@
 }
 
 #content:hover {
-    background:#fff;
+    background: #fff;
     }
 
 nav {
@@ -46,15 +56,10 @@ nav {
     flex-wrap: wrap;
 }
 
-.navMenuMobile {
-    margin: 0px 10px;
-}
-
-
 
 /* configuracoes do logo */
 .divLogo {
-    height: 100px;
+    height: 80px;
     width: 120px;
 }
 
@@ -74,7 +79,6 @@ nav {
    
 }
 
-
 .nav2 {
     display: flex;
     justify-content: center;
@@ -83,6 +87,13 @@ nav {
 
 
 /* configuracoes do menu */
+
+.nav3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav3 a {
     
     height: 20px;
@@ -97,10 +108,24 @@ nav {
     
 }
 
-.nav3 {
+.nav3Mobile {
+    display: none;
+    align-items: flex-start;
+    Flex-direction: column;
+    padding: 8px 0px 8px 0px;
+
+}
+
+
+.nav3Mobile a {
+    height: 20px;
+    min-width: 150x;
+    max-width: 150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    border: solid 1px black;
 }
 
 /* configuracoes imagens sections */
@@ -119,6 +144,10 @@ nav {
 
 @media (max-width: 750px) {
     .nav2 {
+        display: none;
+    }
+
+    .nav3 {
         display: none;
     }
 }

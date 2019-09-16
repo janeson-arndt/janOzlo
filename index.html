@@ -16,31 +16,46 @@
 <body>
 
 
-    <header id="content" class="barraMenu"> <!-- idContent serve apenas para o hover / barraMenu mantem o menu fixo e aplica a transação de cor-->
+    <header id="content" class="barraMenu">
+        <!-- idContent serve apenas para o hover / barraMenu mantem o menu fixo e aplica a transação de cor-->
 
         <nav class="nav1">
-      
+
             <!--input type="checkbox" id="btnMenu">
             <label for="btnMenu"></label>-->
-            <div>
+            <div class="menuMobile" id="idMenuMobile">
                 <a>&#9776;</a>
             </div>
 
-            <div class="divLogoMobile"> <!-- define o tamanho da logo versao mobile-->
-                <img class="logo" src="img/logo5.svg"> <!-- class logo define que o tamanho da vai ser proporcional ao container-->
+            <div class="divLogoMobile">
+                <!-- define o tamanho da logo versao mobile-->
+                <img class="logo" src="img/logo5.svg">
+                <!-- class logo define que o tamanho da vai ser proporcional ao container-->
             </div>
 
         </nav>
 
         <nav class="nav2">
 
-            <div class="divLogo"> <!-- divLogo define o tamanho da div container da logo-->
-                <img class="logo" src="img/logo6.svg">
+            <div class="divLogo">
+                <!-- divLogo define o tamanho da div container da logo
+                <img class="logo" src="img/logo6.svg">-->
+                <img class="logo" src="img/logo5.svg">
             </div>
 
         </nav>
-
+        <!-- Menu navegador -->
         <nav class="nav3">
+
+            <a>NOSSOS ÓCULOS</a>
+            <a>SOBRE</a>
+            <a>ONDE ENCONTRAR</a>
+            <a>BLOG</a>
+            <a>CONTATO</a>
+
+        </nav>
+        <!-- Menu mobile -->
+        <nav class="nav3Mobile">
 
             <a>NOSSOS ÓCULOS</a>
             <a>SOBRE</a>
@@ -51,7 +66,7 @@
         </nav>
     </header>
 
-   <!-- <header id="content" class="barraMenu">
+    <!-- <header id="content" class="barraMenu">
 
             <nav>
                 <div id="idDivLabel">
@@ -99,7 +114,7 @@
             <img srcset="img/section/section1_2.jpg" alt="My default image">
         </picture>
     </section>
-    
+
     <section class="sections">
         <picture>
             <source srcset="img/section/mobileSection4.jpg" media="(max-width: 768px)">
