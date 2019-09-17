@@ -26,7 +26,19 @@
 a {
     cursor: pointer;
 }
-.nav1 a {
+
+#btnMenu {
+    display: visible;
+}
+
+#btnMenu:checked ~ .nav3Mobile {
+    display: visible;
+    align-items: flex-start;
+    Flex-direction: column;
+    padding: 8px 0px 8px 0px;
+    }
+
+.nav1 label {
 
     background-color: #222;
     color: #fff;
