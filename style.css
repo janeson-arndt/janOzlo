@@ -28,7 +28,12 @@ a {
 }
 
 #btnMenu {
-    display: visible;
+    display: none;
+}
+
+.nav3Mobile {
+    margin-left: -100%; /*O menu é escondido em 100% a esquerda */
+    transition: all .4s;
 }
 
 #btnMenu:checked ~ .nav3Mobile {
