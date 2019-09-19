@@ -28,20 +28,13 @@ a {
 }
 
 #btnMenu {
-    display: none;
+    display: visible;
 }
 
 .nav3Mobile {
     margin-left: -100%; /*O menu é escondido em 100% a esquerda */
     transition: all .4s;
 }
-
-#btnMenu:checked ~ .nav3Mobile {
-    display: visible;
-    align-items: flex-start;
-    Flex-direction: column;
-    padding: 8px 0px 8px 0px;
-    }
 
 .nav1 label {
 
@@ -126,7 +119,6 @@ nav {
 }
 
 .nav3Mobile {
-    display: none;
     align-items: flex-start;
     Flex-direction: column;
     padding: 8px 0px 8px 0px;
@@ -167,6 +159,12 @@ nav {
     .nav3 {
         display: none;
     }
+
+    
+    #btnMenu:checked ~ .nav3Mobile {
+        margin-left: 0;
+    }
+
 }
 
 @media (min-width: 750px) {
