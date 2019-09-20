@@ -31,8 +31,33 @@ a {
     display: visible;
 }
 
+
+
 .nav3Mobile {
-    margin-left: -100%; /*O menu é escondido em 100% a esquerda */
+    display: none;
+    align-items: flex-start;
+    Flex-direction: column;
+    padding: 8px 0px 8px 0px;
+    border: solid 1px black;
+    margin-top: -50px;
+
+}
+
+
+.nav3Mobile a {
+    height: 20px;
+    min-width: 150x;
+    max-width: 150px;
+    display: flex;
+    margin: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    /*: solid 1px black;*/
+}
+
+.nav3Mobile1 {
+    position: relative;
+    margin-left: -50%; /*O menu é escondido em 100% a esquerda */
     transition: all .4s;
 }
 
@@ -118,24 +143,7 @@ nav {
     
 }
 
-.nav3Mobile {
-    align-items: flex-start;
-    Flex-direction: column;
-    padding: 8px 0px 8px 0px;
 
-}
-
-
-.nav3Mobile a {
-    height: 20px;
-    min-width: 150x;
-    max-width: 150px;
-    display: flex;
-    margin: 10px;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 12px;
-    border: solid 1px black;
-}
 
 /* configuracoes imagens sections */
 .sections {
@@ -161,8 +169,13 @@ nav {
     }
 
     
-    #btnMenu:checked ~ .nav3Mobile {
-        margin-left: 0;
+.menuMobile:hover ~ .nav3Mobile {
+        display: visible;
+        align-items: flex-start;
+        Flex-direction: column;
+        padding: 8px 0px 8px 0px;
+        border: solid 1px black;
+        margin-top: -50px;
     }
 
 }
