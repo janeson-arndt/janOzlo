@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>OZLO | Óculos de Sol e Grau</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
     <!-- CSS -->
     <link href="style.css" rel="stylesheet">
@@ -15,97 +14,60 @@
 
 <body>
 
+    <header>
 
-    <header id="content" class="barraMenu">
-        <!-- idContent serve apenas para o hover / barraMenu mantem o menu fixo e aplica a transação de cor-->
+        <input type="checkbox" id="btnMenu">
 
-        <nav class="nav1">
-
-          
-            <div class="menuMobile">
-                <!--<a href="#">&#9776;</a>-->
-                <input type="checkbox" id="btnMenu">
+        <nav class="navMobile">
+            <div class="divLabel">
                 <label for="btnMenu">&#9776;</label>
             </div>
 
             <div class="divLogoMobile">
-                <!-- define o tamanho da logo versao mobile-->
-                <img class="logo" src="img/logo5.svg">
-                <!-- class logo define que o tamanho da vai ser proporcional ao container-->
-            </div>
-
-            <nav class="nav3Mobile">
-
-                <a>NOSSOS ÓCULOS</a>
-                <a>SOBRE</a>
-                <a>ONDE ENCONTRAR</a>
-                <a>BLOG</a>
-                <a>CONTATO</a>
-        
-            </nav>
-
-        </nav>
-
-        <nav class="nav2">
-
-            <div class="divLogo">
-                <!-- divLogo define o tamanho da div container da logo
-                <img class="logo" src="img/logo6.svg">-->
                 <img class="logo" src="img/logo5.svg">
             </div>
 
         </nav>
-        <!-- Menu navegador -->
-        <nav class="nav3">
-
-            <a>NOSSOS ÓCULOS</a>
-            <a>SOBRE</a>
-            <a>ONDE ENCONTRAR</a>
-            <a>BLOG</a>
-            <a>CONTATO</a>
-
-        </nav>
-        <!-- Menu mobile -->
- 
+  
+        <Nav class="menuMobile">
+                <ul>
+                    <li><a href="#">NOSSOS ÓCULOS</a></li>
+                    <li><a href="#">SOBRE</a> </li>
+                    <li><a href="#">ONDE ENCONTRAR</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </Nav>
     </header>
-    <nav class="nav3Mobile">
 
-        <a>NOSSOS ÓCULOS</a>
-        <a>SOBRE</a>
-        <a>ONDE ENCONTRAR</a>
-        <a>BLOG</a>
-        <a>CONTATO</a>
-
-    </nav>
-
+    
     <section class="sections">
-        <picture>
-            <source srcset="img/section/mobileSection1_3.jpg" media="(max-width: 768px)">
-            <source srcset="img/section/section1_3.jpg">
-            <img srcset="img/section/section1_3.jpg" alt="My default image">
-        </picture>
-    </section>
-
-   <!-- <section class="sections">
-        <picture>
-            <source srcset="img/section/mobileSection1_2.jpg" media="(max-width: 768px)">
-            <source srcset="img/section/section1_2.jpg">
-            <img srcset="img/section/section1_2.jpg" alt="My default image">
-        </picture>
-    </section>-->
-
-    <section class="sections">
-        <picture>
-            <source srcset="img/section/mobileSection4.jpg" media="(max-width: 768px)">
-            <source srcset="img/section/section4.jpg">
-            <img srcset="img/section/section4.jpg" alt="My default image">
-        </picture>
-    </section>
-
-    <footer>
-
-    </footer>
-
+            <picture>
+                <source srcset="img/section/mobileSection1_3.jpg" media="(max-width: 768px)">
+                <source srcset="img/section/section1_3.jpg">
+                <img srcset="img/section/section1_3.jpg" alt="My default image">
+            </picture>
+        </section>
+    
+        <section class="sections">
+            <picture>
+                <source srcset="img/section/mobileSection1_2.jpg" media="(max-width: 768px)">
+                <source srcset="img/section/section1_2.jpg">
+                <img srcset="img/section/section1_2.jpg" alt="My default image">
+            </picture>
+        </section>
+    
+        <section class="sections">
+            <picture>
+                <source srcset="img/section/mobileSection4.jpg" media="(max-width: 768px)">
+                <source srcset="img/section/section4.jpg">
+                <img srcset="img/section/section4.jpg" alt="My default image">
+            </picture>
+        </section>
+    
+        <footer>
+    
+        </footer>
 </body>
 
 </html>

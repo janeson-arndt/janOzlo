@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botão bonito</title>
+
+    <style>
+        /* Checkbox Hack */
+        #toggle-1 {
+            display: none;
+        }
+
+        label {
+            -webkit-appearance: push-button;
+            -moz-appearance: button;
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px;
+            position: relative;
+        }
+
+        /* CSS padrão da div */
+        .mostra {
+            display: none;
+        }
+
+        /* CSS quando o checkbox está marcado */
+        #toggle-1:checked+.mostra {
+            display: flex;
+            align-items: flex-start;
+        }
+        .menu a {
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <label for="toggle-1">&#9776;</label>
+        <input type="checkbox" id="toggle-1">
+
+
+
+        <div class="mostra">
+            <a>NOSSOS ÓCULOS</a>
+            <a>SOBRE</a>
+            <a>ONDE ENCONTRAR</a>
+            <a>BLOG</a>
+            <a>CONTATO</a>
+        </div>
+
+
+    </header>
+</body>
+
+</html>
