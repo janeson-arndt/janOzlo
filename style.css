@@ -3,7 +3,17 @@
     margin: 0;
    /*outline: 1px solid black;*/
 }
-/* Configurações do menu mobile */
+/* ########################################################
+    CONFIGURAÇÕES MENU MOBILE
+    ########################################################*/
+
+.headerMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 1s;
+}
 .divLogoMobile {
     height: 60px;
     width: 120px;
@@ -27,7 +37,8 @@
 .navMobile {
     background-color: tomato;
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    border-bottom: #222 solid 1px;  
 }
 
 
@@ -40,17 +51,22 @@
     width: 100%;
     height: 60px;
     font-family: Arial;
+    font-size: 20px;
+
  
 }
 
 .menuMobile ul {
     list-style: none;
     position: relative;
+  
 }
 
 .mmenuMobile ul li {
     width: 100%;
     float: left;
+    padding: 5px 0px 5px 0px;
+ 
 }
 
 .menuMobile a {
@@ -59,21 +75,15 @@
     text-decoration: none;
     text-align: center;
     background-color: tomato;
-    color: black;
+    color: #222;
+  
 }
 
     /* altera a  cor de fundo do item quando passar o mouse */
 
     .menuMobile a:hover {
-        background-color: black;
+    background-color: #222;
         color: #fff;
-    }
-
-    
-    .menuMobile {
-        margin-left: -110%;
-        /*O menu é escondido em 100% a esquerda */
-        transition: all .4s;
     }
 
 @media(max-width: 800px) {
@@ -86,6 +96,17 @@
     #btnMenu:checked~.menuMobile {
         margin-left: 0%;
         transition: all .4s;
+    }
+
+    #btnMenu:not(checked)~.menuMobile {
+        margin-left: -110%; 
+        transition: all .4s;
+    }
+
+    .menuMobile {
+        margin-left: -110%;
+        /*O menu é escondido em 100% a esquerda */
+        
     }
 
 
@@ -108,6 +129,7 @@ justify-content: flex-end
     height: 60px;
     width: 120px;
     background-color: tomato;
+    
 }
 
 
